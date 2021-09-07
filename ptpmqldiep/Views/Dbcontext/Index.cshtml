@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Nhập dữ liệu sinh viên</h2>
+
+
+@using (Html.BeginForm())
+{
+    <label>Nhập A: </label>
+    <input type="text" name="soA" />
+    <br />
+    <label>Nhập B: </label>
+    <input type="text" name="soB" />
+    <br />
+    <input type="submit" value="gửi dữ liệu" />
+
+
+}
+<br />
+<p>Du lieu vua nhap : </p>
+<h2>@ViewBag.ketqua</h2>
